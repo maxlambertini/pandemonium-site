@@ -8,7 +8,7 @@
     <link href="bulma.min.css" rel="stylesheet">
 </head>
 <body>
-    <img src="pando.jpg" alt="Pandemonium Logo" style="display:block;width:100%;" />
+    <img src="pando.jpg" alt="Pandemonium Logo" style="margin:0 auto;max-width:640px;display:block;width:100%;" />
     <section class="section">
     <div class="container">
         <div class="block">
@@ -117,7 +117,8 @@
     
     
     const _table3 = `1|8|Demonic Possession
-    9|10|Top Secret Government experiment Gone Awry
+    9|12|Top Secret Government experiment Gone Awry
+    13|16|Secret Conspiracy
     17|20|Weird Cultists
     21|25|Deranged Serial Killer
     26|30|Spirit Possession
@@ -127,7 +128,7 @@
     46|50|Mass Hallucinations.
     51|55|Hoax Perpetrated by Local Publicity Seeker.
     56|60|Practical Joke Played by EBES (Wiseguy Aliens from Betelgeuse)
-    61|65|Martian Mind Control Secret Conspiracy
+    61|65|Martian Mind Control 
     66|70|Friendly Aliens from Venus Trying to Wam Us of Impending Disaster
     71|75|Hostile Aliens from Zeta Reticuli
     76|80|Contact by Gilaneans
@@ -163,8 +164,8 @@
     49|50|Encounter with a bunch of Money Making Cultists looking for donations.
     50|51|Encounter with a group of Oddball Cultists who either worship something or someone related to the Story or are just acting like the kooks that they are.
     51|52|Temporal Rift; while driving or walking the characters enter a low lying cloud that turns out to be a hole in Time. When they pass through the cloud they discover that they have gone back in time to the previous day.
-    53|54|Mundane accident delays the characters. 
-    55|56|Poltergeist Phenomena occurs in the vicinity of the P.IS.
+    53|55|Mundane accident delays the characters. 
+    56|57|Poltergeist Phenomena occurs in the vicinity of the P.IS.
     58|59|Reality Check: the oppressive nature of the Mundane world causes all the P.I.s to make a Reality Check vs their Mind rating. Those who fail temporarily drift out of Enlightened consciousness and revert to their Mundane consciousness, losing all knowledge of Past Lives or Paranormal Talents until a cure can be effected.
     60|61|Gremlins damage or steal a piece of equipment from the characters. 
     62|63|Friendly Aliens from Venus appear in human form and offer to help the P.I.s in some way.
@@ -207,6 +208,9 @@
             }
         });
         console.log(rndInt)
+        if (res == "!") {
+            res = `${res} -> ${rndInt}`
+        }
         return res
     }
     
